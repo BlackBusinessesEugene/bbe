@@ -10,7 +10,7 @@ output:
 library(pacman)
 p_load(tidyverse,kableExtra, rmdformats)
 library(readr)
-bbe <- read_csv("Black Businesses to Support in Eugene - Sheet2.csv")
+bbe <- read_csv("Black Businesses to Support in Eugene - Type.csv")
 ```
 
 ## Food and Dining
