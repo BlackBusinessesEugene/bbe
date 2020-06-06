@@ -13,14 +13,14 @@ library(readr)
 bbe <- read_csv("Black Businesses to Support in Eugene - Type.csv")
 ```
 
-## Food and Dining
+## **Food and Dining**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "food.dining")[,2:3])%>%
   kable_styling(full_width = F, position = "left")
 ```
 
-## Hair Care and Beauty
+## **Hair Care and Beauty**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "haircare.beauty")[,2:3])%>%
@@ -28,7 +28,7 @@ kable(filter(bbe, Type == "haircare.beauty")[,2:3])%>%
 
 ```
 
-## Cannabis and Vape
+## **Cannabis and Vape**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "cannabis.vape")[,2:3])%>%
@@ -36,7 +36,7 @@ kable(filter(bbe, Type == "cannabis.vape")[,2:3])%>%
 
 ```
 
-## Retail
+## **Retail**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "retail")[,2:3])%>%
@@ -44,14 +44,14 @@ kable(filter(bbe, Type == "retail")[,2:3])%>%
 
 ```
 
-## Home Decor
+## **Home Decor**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "home.decor")[,2:3])%>%
   kable_styling(full_width = F, position = "left")
 ```
 
-## Health, Fitness, and Athletics
+## **Health, Fitness, and Athletics**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "health")[,2:3])%>%
@@ -59,7 +59,7 @@ kable(filter(bbe, Type == "health")[,2:3])%>%
 
 ```
 
-## Music and Dance
+## **Music and Dance**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "music")[,2:3])%>%
@@ -67,7 +67,7 @@ kable(filter(bbe, Type == "music")[,2:3])%>%
 
 ```
 
-## Auto
+## **Auto**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "auto")[,2:3])%>%
@@ -75,10 +75,26 @@ kable(filter(bbe, Type == "auto")[,2:3])%>%
 
 ```
 
-## Animal Support
+## **Animal Support**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "animal")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
+
+## **Non-profits**
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "nonprofits")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
+
+## **Authors**
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "authors")[,2:3])%>%
   kable_styling(full_width = F, position = "left")
 
 ```
