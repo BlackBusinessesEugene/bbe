@@ -1,0 +1,11 @@
+name: "my-website"
+navbar:
+  left:
+    - text: "Black Businesses"
+      href: index.html
+    - text: "Resources"
+      href: about.html
+output:
+  html_document:
+    theme: flatly
+    css: style.css

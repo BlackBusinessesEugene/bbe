@@ -1,0 +1,84 @@
+---
+title: "Black Owned Businesses in Eugene"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+
+---
+```{r include=FALSE}
+library(pacman)
+p_load(tidyverse,kableExtra, rmdformats)
+library(readr)
+bbe <- read_csv("Black Businesses to Support in Eugene - Sheet2.csv")
+```
+
+## Food and Dining
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "food.dining")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+```
+
+## Hair Care and Beauty
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "haircare.beauty")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
+
+## Cannabis and Vape
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "cannabis.vape")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
+
+## Retail
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "retail")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
+
+## Home Decor
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "home.decor")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+```
+
+## Health, Fitness, and Athletics
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "health")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
+
+## Music and Dance
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "music")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
+
+## Auto
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "auto")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
+
+## Animal Support
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "animal")[,2:3])%>%
+  kable_styling(full_width = F, position = "left")
+
+```
