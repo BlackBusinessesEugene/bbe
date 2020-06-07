@@ -17,16 +17,16 @@ bbe$Name <- paste0("[", bbe$Name, "](",bbe$`Instagram Link`, ")")
 ## **Food and Dining**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "food.dining")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "food.dining")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 ```
 
 ## **Hair Care and Beauty**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "haircare.beauty")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "haircare.beauty")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
@@ -34,8 +34,8 @@ kable(filter(bbe, Type == "haircare.beauty")[,2:2])%>%
 ## **Cannabis and Vape**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "cannabis.vape")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "cannabis.vape")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
@@ -43,8 +43,8 @@ kable(filter(bbe, Type == "cannabis.vape")[,2:2])%>%
 ## **Retail**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "retail")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "retail")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
@@ -52,16 +52,16 @@ kable(filter(bbe, Type == "retail")[,2:2])%>%
 ## **Home Decor**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "home.decor")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "home.decor")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 ```
 
 ## **Health, Fitness, and Athletics**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "health")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "health")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
@@ -69,8 +69,8 @@ kable(filter(bbe, Type == "health")[,2:2])%>%
 ## **Music and Dance**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "music")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "music")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
@@ -78,8 +78,8 @@ kable(filter(bbe, Type == "music")[,2:2])%>%
 ## **Auto**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "auto")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "auto")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
@@ -87,8 +87,8 @@ kable(filter(bbe, Type == "auto")[,2:2])%>%
 ## **Animal Support**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "animal")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "animal")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
@@ -96,8 +96,8 @@ kable(filter(bbe, Type == "animal")[,2:2])%>%
 ## **Non-profits**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "nonprofits")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "nonprofits")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
@@ -105,8 +105,8 @@ kable(filter(bbe, Type == "nonprofits")[,2:2])%>%
 ## **Authors**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-kable(filter(bbe, Type == "authors")[,2:2])%>%
-  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+kable(filter(bbe, Type == "authors")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
