@@ -18,14 +18,16 @@ bbe$Name <- paste0("[", bbe$Name, "](",bbe$`Instagram Link`, ")")
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "food.dining")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 ```
 
 ## **Hair Care and Beauty**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "haircare.beauty")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
 
@@ -33,7 +35,8 @@ kable(filter(bbe, Type == "haircare.beauty")[,2:2])%>%
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "cannabis.vape")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
 
@@ -41,7 +44,8 @@ kable(filter(bbe, Type == "cannabis.vape")[,2:2])%>%
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "retail")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
 
@@ -49,14 +53,16 @@ kable(filter(bbe, Type == "retail")[,2:2])%>%
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "home.decor")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 ```
 
 ## **Health, Fitness, and Athletics**
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "health")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
 
@@ -64,7 +70,8 @@ kable(filter(bbe, Type == "health")[,2:2])%>%
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "music")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
 
@@ -72,7 +79,8 @@ kable(filter(bbe, Type == "music")[,2:2])%>%
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "auto")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
 
@@ -80,7 +88,8 @@ kable(filter(bbe, Type == "auto")[,2:2])%>%
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "animal")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
 
@@ -88,7 +97,8 @@ kable(filter(bbe, Type == "animal")[,2:2])%>%
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "nonprofits")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
 
@@ -96,6 +106,7 @@ kable(filter(bbe, Type == "nonprofits")[,2:2])%>%
 ```{r echo=FALSE, results='asis'}
 library(knitr)
 kable(filter(bbe, Type == "authors")[,2:2])%>%
-  kable_styling(full_width = F, position = "left")
+  kable_styling(bootstrap_options = c("striped", "hover"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
 
 ```
