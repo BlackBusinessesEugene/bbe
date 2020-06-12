@@ -110,3 +110,30 @@ kable(filter(bbe, Type == "authors")[,2:3], col.names = NULL)%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
+
+## **Photography/Videography**
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "photography")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
+
+```
+
+## **Officiant**
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "officiant")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
+
+```
+
+## **Landscaping**
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "landscaping")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
+
+```
