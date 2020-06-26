@@ -137,3 +137,12 @@ kable(filter(bbe, Type == "landscaping")[,2:3], col.names = NULL)%>%
     column_spec(1,width = "4.5cm", bold = T)
 
 ```
+
+## **Art**
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(filter(bbe, Type == "art")[,2:3], col.names = NULL)%>%
+  kable_styling(bootstrap_options = c("striped", "hover","responsive"))%>%
+    column_spec(1,width = "4.5cm", bold = T)
+
+```
